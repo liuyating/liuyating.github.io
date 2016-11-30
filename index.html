@@ -111,9 +111,9 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/home">首页</a></li>
+                            <li><a href="/">首页</a></li>
                         
-                            <li><a href="/dev">技术</a></li>
+                            <li><a href="/categories/技术/">技术</a></li>
                         
                             <li><a href="/categories/随笔/">随笔</a></li>
                         
@@ -133,7 +133,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/心情/" style="font-size: 10px;">心情</a>
+                        <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/心情/" style="font-size: 10px;">心情</a>
                     </div>
                 </section>
                 
@@ -174,9 +174,9 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/home">首页</a></li>
+                    <li><a href="/">首页</a></li>
                 
-                    <li><a href="/dev">技术</a></li>
+                    <li><a href="/categories/技术/">技术</a></li>
                 
                     <li><a href="/categories/随笔/">随笔</a></li>
                 
@@ -196,6 +196,82 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-centos安装Python图像处理库Pillow报错" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/11/30/centos安装Python图像处理库Pillow报错/" class="article-date">
+      <time datetime="2016-11-30T10:43:36.000Z" itemprop="datePublished">2016-11-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/centos安装Python图像处理库Pillow报错/">centos安装Python图像处理库Pillow报错</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>安装依赖库</strong></p>
+<pre><code>yum install zlib zlib-devel 
+yum install libjpeg libjpeg-devel 
+yum install freetype freetype-devel 
+</code></pre><p><strong>安装Pillow</strong></p>
+<pre><code>pip install Pillow
+指定版本： pip install Pillow==3.4.2
+</code></pre><p>如果下载较慢，可更换源，如豆瓣源。</p>
+<pre><code>pip install -i  https://pypi.douban.com/simple/ Pillow==3.4.2
+</code></pre><p><strong>依旧报错，例：</strong></p>
+<pre><code>_imaging.c:3359: error: expected ?.?. ?.?. ?.?. ?.sm?.or ?._attribute__?.before ?.?.token
+</code></pre><p>当需要安装一个源外的python类库, 而这个类库内含需要编译的调用python api的c/c++文件时还需要安装python-dev，在centos中应该是python-devel。</p>
+<pre><code>pip install python-devel
+</code></pre><p><strong>再安装Pillow，问题解决。</strong></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/技术/">技术</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-欢迎来到我的小窝" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -224,10 +300,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>hello,我是明天，英文名Salome，运维开发工程师一枚，热爱拉丁。欢迎来到我的小窝~</p>
+        <p>hello,我是<strong><em>明天</em></strong>，英文名<strong><em>Salome</em></strong>，<strong><em>运维开发工程师</em></strong>一枚，热爱拉丁。欢迎来到我的小窝~</p>
 <p>花费几个小时终于给自己搭好了窝，起身发现坐久了腿都发麻不会走路了，但是成就感满满。为什么建个人博客呢，原因很简单，一方面是好奇，我觉得有自己的域名和独立的博客是件无上荣光的事情；其次，想逼自己一把，多多学习，多多总结。必须承认，我不是聪明的宝宝，但是我足够努力和坚持，喜欢的舞蹈想要一直坚持下去，热爱的工作也会尽心尽力去做。第一篇文章就做测试好了，简短说几句就好，希望自己在这块安静的小领土里能沉淀一些财富，同时也期望自己以后的总结和分享能让更多人受益。</p>
-<p>引用好老大的名言：“好日子，慢慢过”，希望这是一个好的开始，别想太多，努力就对了。</p>
-<p>每一个明天都是晴天，good luck for you!</p>
+<p>引用好老大的名言：<strong><em>“好日子，慢慢过”</em></strong>，希望这是一个好的开始，别想太多，努力就对了。</p>
+<p><strong><em>每一个明天都是晴天</em></strong>，good luck for you!</p>
 
       
     </div>
