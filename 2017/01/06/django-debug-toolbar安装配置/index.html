@@ -3,18 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2016年终总结——慌 | 明天是晴天</title>
+  <title>Python：django_debug_toolbar安装配置 | 明天是晴天</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="花点时间总结下已经过去的2016，毕竟无论每一阶段的生活是否如愿和精彩，都该有总结和反思，然后才能有新的目标和期待。今年的总结索性就放在新年初吧，一个字概括我的2016——慌，慌慌忙忙，紧紧张张，凄凄惨惨，风风光光。">
+  <meta name="description" content="django_debug_toolbar安装配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2016年终总结——慌">
-<meta property="og:url" content="http://liuyating.com.cn/2017/01/02/2016年终总结—慌/index.html">
+<meta property="og:title" content="Python：django_debug_toolbar安装配置">
+<meta property="og:url" content="http://liuyating.com.cn/2017/01/06/django-debug-toolbar安装配置/index.html">
 <meta property="og:site_name" content="明天是晴天">
-<meta property="og:description" content="花点时间总结下已经过去的2016，毕竟无论每一阶段的生活是否如愿和精彩，都该有总结和反思，然后才能有新的目标和期待。今年的总结索性就放在新年初吧，一个字概括我的2016——慌，慌慌忙忙，紧紧张张，凄凄惨惨，风风光光。">
-<meta property="og:updated_time" content="2017-01-02T15:03:35.962Z">
+<meta property="og:description" content="django_debug_toolbar安装配置">
+<meta property="og:image" content="http://ohnuiudl0.bkt.clouddn.com/debug_toolbar%E8%BF%90%E8%A1%8C.png">
+<meta property="og:image" content="http://ohnuiudl0.bkt.clouddn.com/debug_tool%E6%9F%A5%E7%9C%8Bsql.png">
+<meta property="og:image" content="http://ohnuiudl0.bkt.clouddn.com/image/blog/debug_tool%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99.png">
+<meta property="og:image" content="http://ohnuiudl0.bkt.clouddn.com/image/blog/debug_toolbar%E6%8A%A5%E9%94%99%E8%AF%A6%E6%83%85.png">
+<meta property="og:updated_time" content="2017-01-06T12:19:17.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2016年终总结——慌">
-<meta name="twitter:description" content="花点时间总结下已经过去的2016，毕竟无论每一阶段的生活是否如愿和精彩，都该有总结和反思，然后才能有新的目标和期待。今年的总结索性就放在新年初吧，一个字概括我的2016——慌，慌慌忙忙，紧紧张张，凄凄惨惨，风风光光。">
+<meta name="twitter:title" content="Python：django_debug_toolbar安装配置">
+<meta name="twitter:description" content="django_debug_toolbar安装配置">
+<meta name="twitter:image" content="http://ohnuiudl0.bkt.clouddn.com/debug_toolbar%E8%BF%90%E8%A1%8C.png">
   
     <link rel="alternative" href="/atom.xml" title="明天是晴天" type="application/atom+xml">
   
@@ -197,11 +202,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-2016年终总结—慌" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-django-debug-toolbar安装配置" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/01/02/2016年终总结—慌/" class="article-date">
-      <time datetime="2017-01-02T12:12:41.000Z" itemprop="datePublished">2017-01-02</time>
+      <a href="/2017/01/06/django-debug-toolbar安装配置/" class="article-date">
+      <time datetime="2017-01-06T11:26:11.000Z" itemprop="datePublished">2017-01-06</time>
 </a>
     </div>
   
@@ -214,7 +219,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      2016年终总结——慌
+      Python：django_debug_toolbar安装配置
     </h1>
   
 
@@ -223,13 +228,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/随笔/">随笔</a>
+    <a class="article-category-link" href="/categories/技术/">技术</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/总结/">总结</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -240,119 +245,32 @@
       
           
 
-        <p>花点时间总结下已经过去的2016，毕竟无论每一阶段的生活是否如愿和精彩，都该有总结和反思，然后才能有新的目标和期待。今年的总结索性就放在新年初吧，<strong>一个字概括我的2016——慌</strong>，慌慌忙忙，紧紧张张，凄凄惨惨，风风光光。</p>
-<a id="more"></a>
-<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><h3 id="The-Good"><a href="#The-Good" class="headerlink" title="The Good"></a>The Good</h3><ol>
-<li>做了很多事情,产品跨度从CMDB、主机管理、发布系统到事故处理中心</li>
-<li>从频繁问浩浩问题到帮助新同学解决问题</li>
-<li>愿意花心思甚至牺牲下班时间去研究问题，努力做出更好的产品</li>
-<li>对旧代码做过几次阶段性的性能优化，争取不给后人挖坑</li>
-<li>公司的周年庆、中秋节、万圣节、年会等活动很荣幸被邀参演</li>
-<li>公司内部讲师认证，华为全联接、运维大会学习，善于分享是一种能力</li>
-<li>电子商务师认证，电商知识了解。还是做开发好玩</li>
-</ol>
-<h3 id="The-Bad"><a href="#The-Bad" class="headerlink" title="The Bad"></a>The Bad</h3><ol>
-<li>经历大量的版本切换开发和公司变动，闷头重复性劳动的瓶颈期</li>
-<li>以为自己可以，但无法达到自己期望导致半途而废的GITC分享，难得的一次失败经历</li>
-<li>工作中太多繁杂的小事情，需要更好的管理时间，抓好主次</li>
-<li>编程能力方面没有系统性的学习和提升，有工作一年啃半年老本嫌疑</li>
-<li>专注&amp;较真一定是亲兄弟，果断视力继续下降，颈椎也弯了</li>
-</ol>
-<h2 id="责任"><a href="#责任" class="headerlink" title="责任"></a>责任</h2><p>经常和同事朋友开玩笑讲，我从来没把自己当女孩子看，事实也差不多如此，一直相信我虽是天生柔弱小女子，也同样能扛起重担干大事。</p>
-<p>记得没毕业前给刘爸爸放言，等俺第一个月的工资就给他买新手机，实现了，虽然只是个华为，听说老爸很开心。本以为2016可以带刘爸爸上东方明珠，带他看看大上海，看看我在这边的生活，带他吃好多好吃的……可惜生活总是太多意外，这个愿望2016没有实现，2017不知道能否实现。</p>
-<ul>
-<li>家里有困难，使不上力干着急。税后缴完房租的工资和家里公务员没大差，分批共贡献家里2.5w，每攒1w块都略感心酸</li>
-<li>离家千里之外，多和家人聊天，过年没有年假也买提早回家的票，多陪陪家人</li>
+        <h3 id="安装参考"><a href="#安装参考" class="headerlink" title="安装参考"></a>安装参考</h3><p>django_debug_toolbar官方文档：<a href="http://django-debug-toolbar.readthedocs.io/en/stable/" title="http://django-debug-toolbar.readthedocs.io/en/stable/" target="_blank" rel="external">http://django-debug-toolbar.readthedocs.io/en/stable/</a><br>Github地址：<a href="https://github.com/jazzband/django-debug-toolbar" title="https://github.com/jazzband/django-debug-toolbar" target="_blank" rel="external">https://github.com/jazzband/django-debug-toolbar</a>  </p>
+<a id="more"></a>  
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>pip install django-debug-toolbar  
+</code></pre><p>需留意与Django对应的版本，参考官方版本说明<a href="http://django-debug-toolbar.readthedocs.io/en/stable/changes.html#change-log" title="官方版本说明 " target="_blank" rel="external">http://django-debug-toolbar.readthedocs.io/en/stable/changes.html#change-log</a>。<br>例：Django==1.6.9  </p>
+<pre><code>pip install django-debug-toolbar==0.11.0
+</code></pre><p>检验是否安装成功：  </p>
+<pre><code>import debug_toolbar
+</code></pre><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h4 id="settings-py-配置"><a href="#settings-py-配置" class="headerlink" title="settings.py 配置"></a>settings.py 配置</h4><ul>
+<li>INSTALLED_APPS中添加 ‘debug_toolbar’，确保其在’django.contrib.staticfiles’后面  </li>
+<li>MIDDLEWARE_CLASSES中添加<br>‘debug_toolbar.middleware.DebugToolbarMiddleware’  </li>
+<li>添加 INTERNAL_IPS = (‘127.0.0.1’,)  </li>
+<li>添加 DEBUG_TOOLBAR_PATCH_SETTINGS = False  </li>
+<li>确保 DEBUG = True  </li>
 </ul>
-<h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><h3 id="拉丁"><a href="#拉丁" class="headerlink" title="拉丁"></a>拉丁</h3><p>不放弃拉丁是我的长期目标，课程减少为一个老师，费用减半，但毕业至今拉丁课程上的投资（加上预购的课程）也约8000块，相对于花费来说进步有些缓慢，用心程度不够。本想增加的芭蕾课程也始终没有落实，一个字——穷。上班总是坐太久导致肩颈僵硬了很多，柔韧性方面面临更大难关，舞蹈室的课程也有些松散，希望明年的课程改革能优质落实，2017应该考虑考证或比赛，有目标感应该能提升不少动力。</p>
-<h3 id="吉他"><a href="#吉他" class="headerlink" title="吉他"></a>吉他</h3><p>年初不顾家人的不理解坚持买了吉他，也算是一种慌吧，怕以后只顾赚钱再也拾不起来。欠的债总能还得完，热情却难以保证不会褪减。事实是，吉他相比拉丁永远是排在第二位的，这个关系我必须理得清楚。一年到头，我可能拿起吉他的次数不超过15次，时间太有限，偶尔开心或孤单时才会想起它，但我觉得还是值得拥有。我想要的，都该拥有。</p>
-<h3 id="口琴"><a href="#口琴" class="headerlink" title="口琴"></a>口琴</h3><p>口琴是爸爸送岁姐去山东上大学回来送我的礼物，那时我初二，一直陪伴我到现在，大学里倒是还约着同学一起吹吹曲，现在也只是更偶尔的想起，但会一直保留，很珍贵的礼物。</p>
-<h3 id="架子鼓"><a href="#架子鼓" class="headerlink" title="架子鼓"></a>架子鼓</h3><p>一直到2016年最后一天，我才满足了自己的小心愿，去每天公交车都经过的琴行咨询。我一定是贪心鬼，总是有好多想要去做的事情，这两年萌生的愿望，觉得打鼓的姑娘超帅，有机会一定要尝试。课程一节150，要不要落实还很犹豫，会慎重权衡考虑。</p>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><p>生活方面感觉有些粗糙，实在不太会照顾自己</p>
-<ul>
-<li>有添新衣，也有久违的朋友送香水，但还是提升不了啥品味</li>
-<li>年初新买的多肉，家里的死掉一半，办公室同事送的反倒长得很好</li>
-<li>周末偶尔还是会去社区打乒乓球，等我老了，绝对是社区的高手</li>
-</ul>
-<ul>
-<li>年初不小心丢了手机，没用几个月的6s啊，心碎一地</li>
-<li>3、4月份能量满满，坚持自己做饭带饭吃，后来通通放弃了，周末也没再吃过早餐，继续吃辣继续挤痘痘，继续晚睡失眠</li>
-<li>年中连续几个月都很颓废，情绪管控不好，精力被掏空。姐姐问我一个人会不会有很孤独很难过的时候，我哈哈笑说没有，但怎么会没有呢。朋友说我不关心他，不慰问他，一个男子汉在向我哭诉生活的无奈和凄惨，我很平淡，因为我比别人悲，我听着别人的故事同情的却是自己。我开着玩笑式的分享了我的悲，因为觉得矫情的安慰太无力，我比你惨我还在乐呵呵的活着，你不是应该比我更轻松自在的活嘛，当然，希望这样的安慰是真的有效</li>
-<li>没有照顾好身体，睡眠不好，颈椎不舒服，花在按摩、艾灸上的钱也不少</li>
-</ul>
-<h2 id="情感"><a href="#情感" class="headerlink" title="情感"></a>情感</h2><h3 id="家人"><a href="#家人" class="headerlink" title="家人"></a>家人</h3><p>刘爸爸说，感觉我懂事了，心里有父母，心里有家</p>
-<p>刘爸爸也说，落叶终究要归根，离家那么远，心都要淡了</p>
-<p>刘爸爸还说，啥时候带个蓝朋友回家……</p>
-<p>我还真不敢答复啥，因为我心里也没有答案。我只知道，我目前想要的只是一种喜欢的生活方式，不敢豪言壮语说自己能改变什么，不敢承诺太多</p>
-<h3 id="朋友"><a href="#朋友" class="headerlink" title="朋友"></a>朋友</h3><ul>
-<li>基本不会主动打电话，每个月的电话套餐也基本浪费，同在上海的大学同学一年也没聚几次。好在老朋友的感情还在，好在身边的朋友还能一起包饺子欢乐跨年，互相关爱</li>
-<li>很遗憾没有落实和雪白的约定，计划好并且期待了很久的旅行突然取消，也浪费了买好的特价机票，实在抱歉，好在姐姐宽宏大量，自己劳累也不忘心疼白雪，生活里丝毫不放过的细微的关爱。蒸脸机俺要好好用，美给你看。已经认识14年多了呢，革命友谊丝毫不担心，真正在一起的日子没几年，但一直是心灵的陪伴，期待2017你能落实来陪我一段日子的愿望，然后你能尽早安定，少些奔波劳累，事业家庭双丰收</li>
-<li>和相公的感情更加深厚，她总开玩笑说爱上我了让我小心，我总能突然给她一个小惊喜……感谢遇见，感谢还能互相陪伴，2017我们还要拍更多的美照，记录更多美好</li>
-<li>朋友们纷纷开始结婚，目前一个婚礼都没能赶去参加，结婚的节奏我是赶不上啦，还是努力赚钱给你们多多包红包比较实际</li>
-<li>拖舞蹈老师的福，听了一场演唱会，老歌手吕方，老歌很有味道，情歌更爱意绵长。“遥远的夜空有一个弯弯的月亮，弯弯的月亮下面是那弯弯的小桥……”</li>
-<li>收到了人生的第一束玫瑰花，虽然它很曲折的过了七夕才送到，还是灰常感动，没有在一起的可爱的人，也祝愿你心想事成，开心每一天</li>
-<li>感谢老朋友的惦念，有人问候有人大老远跑来看望有人几乎不会落下的朋友圈点赞……真的很感动。我一定是前几世都在攒RP，这辈子要好好珍惜，努力向上，继续做大家的小太阳</li>
-</ul>
-<h3 id="自己"><a href="#自己" class="headerlink" title="自己"></a>自己</h3><p>朋友老说我不够爱自己，其实我觉得我很爱自己啊，所以才总是爱不上别人</p>
-<p>2016还好哇，体检颈椎不好，就乖乖做按摩加强锻炼调整坐姿；想要的吉他逛一天精挑细选去买；想穿的红裙子红棉袄也是果断入手，想要的芭比娃娃也成功抽中……没有预想到的迪士尼、乌镇、南京也都和朋友去玩了</p>
-<p>2016也还好，有过心动的人，虽然依旧缺乏勇气，但至少证明我还正常，不只是喜欢美腻的相公</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
-<li>2016读书太少，2017继续加油</li>
-<li>分享一段喜欢的文字，送给像亲爱的岁姐一样聪明的姑凉</li>
-</ul>
-<blockquote>
-<pre><code>&quot;Smart girls are the over-thinkers,the insecure ones, the different ones.
- They know what the real world is like. They analyze every little thing in life. 
-Why? To avoid getting hurt . To find happiness. 
-They stay up at night trying to think about every possible situation to get through all the problems. 
-They think too much. They trust less people. 
-Their insercurity proves their respect towards themselves. 
-Of cource they try to live away from a drama-filled life. 
-Smart girls know their worth,now that&apos;s the ones worth keeping by your side.&quot;
-
-聪明的女孩想得比别人多，她们没有安全感，她们与众不同。
-她们知道真实的世界是什么样的，她们仔细感悟生活中的每一件小事。
-为什么要这样呢？为了防止受伤。为了追寻幸福。
-为了解决自己遇到的问题，她们熬夜去想各种方案。她们想的真的很多，不太相信别人。
-她们的不安全感也让自己更自尊，远离那些戏剧化的不靠谱生活。
-聪明的女孩知道自己的价值，她们是真正值得在你身边的人。
-                                                                        ——Wallpaper Quotes
-</code></pre></blockquote>
-<ul>
-<li>分享2016写的唯一一首小诗</li>
-</ul>
-<blockquote>
-<pre><code>遇见小荷塘
-
-时间有脚自己跑  
-我紧追另一个自己在奔跑  
-一个人的我很安静  
-以为少言的人更多情  
-以为有阳光的地方会不觉孤单  
-
-这里没有秋风萧瑟  
-这个冬天来的更晚  
-我依然安静如初  
-不忍剪去的长发  
-等不到的白雪皑皑  
-还有梦中家门后小路的温暖
-
-谁都知道我在等一个人  
-一个温暖而刚强的人  
-而后我会喜欢这多雨的城市  
-还有那人撑起的大伞
-
-遇见你的天很蓝  
-遇见你的我依然安静  
-古树夕阳的余晖里  
-有我反反复复的小心轻盈  
-我喜欢看着你的眼 
-因为它能通往心灵  
-阳光透进眼里  
-爱将驻进心里  
-
-                ——~明天~
-</code></pre></blockquote>
+<h4 id="urls-py-配置"><a href="#urls-py-配置" class="headerlink" title="urls.py 配置"></a>urls.py 配置</h4><pre><code>if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns.append(url(r&apos;^__debug__/&apos;, include(debug_toolbar.urls)))  
+</code></pre><h4 id="JQUERY-URL-配置"><a href="#JQUERY-URL-配置" class="headerlink" title="JQUERY_URL 配置"></a>JQUERY_URL 配置</h4><p>在python的site-packages找到debug_toolbar包，进入settings.py，修改CONFIG_DEFAULTS的’JQUERY_URL’的源。  </p>
+<pre><code>默认：    
+&apos;JQUERY_URL&apos;: &apos;//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js&apos;  
+更换，例如：  
+&apos;JQUERY_URL&apos;: &apos;//cdn.bootcss.com/jquery/2.1.4/jquery.min.js&apos;
+</code></pre><h4 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h4><p>运行web程序，浏览器右侧即可见toolbar<br><img src="http://ohnuiudl0.bkt.clouddn.com/debug_toolbar%E8%BF%90%E8%A1%8C.png" alt=""><br>Panel可参照文档按需配置，例如点击SQL可查看请求数据库详情<br><img src="http://ohnuiudl0.bkt.clouddn.com/debug_tool%E6%9F%A5%E7%9C%8Bsql.png" alt="">  </p>
+<h3 id="遇到的报错"><a href="#遇到的报错" class="headerlink" title="遇到的报错"></a>遇到的报错</h3><h4 id="我第一次并没有运行成功，低版本的问题，遇到报错"><a href="#我第一次并没有运行成功，低版本的问题，遇到报错" class="headerlink" title="我第一次并没有运行成功，低版本的问题，遇到报错"></a>我第一次并没有运行成功，低版本的问题，遇到报错</h4><p><img src="http://ohnuiudl0.bkt.clouddn.com/image/blog/debug_tool%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99.png" alt=""><br>点开看报错详情<br><img src="http://ohnuiudl0.bkt.clouddn.com/image/blog/debug_toolbar%E6%8A%A5%E9%94%99%E8%AF%A6%E6%83%85.png" alt=""><br>修复：打开\site-packages\sqlparse\engine下的filter<em>stack.py文件，修改29行stream = filter</em>.process(stream)为  </p>
+<pre><code>stream = filter_.process(self, stream)
+</code></pre><p>再运行，成功！</p>
 
       
     </div>
@@ -361,13 +279,13 @@ Smart girls know their worth,now that&apos;s the ones worth keeping by your side
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/01/02/2016年终总结—慌/">2016年终总结——慌</a></p>
+        <p><span>本文标题:</span><a href="/2017/01/06/django-debug-toolbar安装配置/">Python：django_debug_toolbar安装配置</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 刘亚婷|Salome 的个人博客">刘亚婷|Salome</a></p>
-        <p><span>发布时间:</span>2017年01月02日 - 20时12分</p>
-        <p><span>最后更新:</span>2017年01月02日 - 23时03分</p>
+        <p><span>发布时间:</span>2017年01月06日 - 19时26分</p>
+        <p><span>最后更新:</span>2017年01月06日 - 20时19分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/01/02/2016年终总结—慌/" title="2016年终总结——慌">http://liuyating.com.cn/2017/01/02/2016年终总结—慌/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://liuyating.com.cn/2017/01/02/2016年终总结—慌/　　作者: 刘亚婷|Salome" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/01/06/django-debug-toolbar安装配置/" title="Python：django_debug_toolbar安装配置">http://liuyating.com.cn/2017/01/06/django-debug-toolbar安装配置/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://liuyating.com.cn/2017/01/06/django-debug-toolbar安装配置/　　作者: 刘亚婷|Salome" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -380,18 +298,9 @@ Smart girls know their worth,now that&apos;s the ones worth keeping by your side
 
 <nav id="article-nav">
   
-    <a href="/2017/01/06/django-debug-toolbar安装配置/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Python：django_debug_toolbar安装配置
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/11/30/centos安装Python图像处理库Pillow报错/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python图像处理:centos安装Python图像处理库Pillow报错</div>
+    <a href="/2017/01/02/2016年终总结—慌/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2016年终总结——慌</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -507,7 +416,7 @@ Smart girls know their worth,now that&apos;s the ones worth keeping by your side
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#工作"><span class="toc-number">1.</span> <span class="toc-text">工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Good"><span class="toc-number">1.1.</span> <span class="toc-text">The Good</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Bad"><span class="toc-number">1.2.</span> <span class="toc-text">The Bad</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#责任"><span class="toc-number">2.</span> <span class="toc-text">责任</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#音乐"><span class="toc-number">3.</span> <span class="toc-text">音乐</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#拉丁"><span class="toc-number">3.1.</span> <span class="toc-text">拉丁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#吉他"><span class="toc-number">3.2.</span> <span class="toc-text">吉他</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#口琴"><span class="toc-number">3.3.</span> <span class="toc-text">口琴</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#架子鼓"><span class="toc-number">3.4.</span> <span class="toc-text">架子鼓</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生活"><span class="toc-number">4.</span> <span class="toc-text">生活</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#情感"><span class="toc-number">5.</span> <span class="toc-text">情感</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#家人"><span class="toc-number">5.1.</span> <span class="toc-text">家人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#朋友"><span class="toc-number">5.2.</span> <span class="toc-text">朋友</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自己"><span class="toc-number">5.3.</span> <span class="toc-text">自己</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他"><span class="toc-number">6.</span> <span class="toc-text">其他</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装参考"><span class="toc-number">1.</span> <span class="toc-text">安装参考</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#settings-py-配置"><span class="toc-number">3.1.</span> <span class="toc-text">settings.py 配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#urls-py-配置"><span class="toc-number">3.2.</span> <span class="toc-text">urls.py 配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JQUERY-URL-配置"><span class="toc-number">3.3.</span> <span class="toc-text">JQUERY_URL 配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运行"><span class="toc-number">3.4.</span> <span class="toc-text">运行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遇到的报错"><span class="toc-number">4.</span> <span class="toc-text">遇到的报错</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#我第一次并没有运行成功，低版本的问题，遇到报错"><span class="toc-number">4.1.</span> <span class="toc-text">我第一次并没有运行成功，低版本的问题，遇到报错</span></a></li></ol></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -560,7 +469,7 @@ Smart girls know their worth,now that&apos;s the ones worth keeping by your side
 
 <div class="duoshuo" id="comments">
 <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="2017/01/02/2016年终总结—慌/" data-title="2016年终总结——慌" data-url="http://liuyating.com.cn/http://liuyating.com.cn/2017/01/02/2016年终总结—慌/"></div>
+	<div class="ds-thread" data-thread-key="2017/01/06/django-debug-toolbar安装配置/" data-title="Python：django_debug_toolbar安装配置" data-url="http://liuyating.com.cn/http://liuyating.com.cn/2017/01/06/django-debug-toolbar安装配置/"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -585,13 +494,11 @@ var duoshuoQuery = {short_name:"liuyating"};
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/01/06/django-debug-toolbar安装配置/" title="上一篇: Python：django_debug_toolbar安装配置">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/11/30/centos安装Python图像处理库Pillow报错/" title="下一篇: Python图像处理:centos安装Python图像处理库Pillow报错">
+            <a href="/2017/01/02/2016年终总结—慌/" title="下一篇: 2016年终总结——慌">
                 <i class="fa fa-angle-right"></i>
             </a>
         
